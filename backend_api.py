@@ -31,16 +31,32 @@ class ObesityData(BaseModel):
     CALC: str
     MTRANS: str
 
+import pandas as pd
+
 @app.post("/predict")
 def predict(data: ObesityData):
-    input_array = np.array([[
-        data.Gender, data.Age, data.Height, data.Weight,
-        data.family_history_with_overweight, data.FAVC,
-        data.FCVC, data.NCP, data.CAEC, data.SMOKE,
-        data.CH2O, data.SCC, data.FAF, data.TUE,
-        data.CALC, data.MTRANS
-    ]])
-    prediction = pipeline.predict(input_array)
+    # Bikin dict input
+    input_dict = {
+        'Gender': [data.Gender],
+        'Age': [data.Age],
+        'Height': [data.Height],
+        'Weight': [data.Weight],
+        'family_history_with_overweight': [data.family_history_with_overweight],
+        'FAVC': [data.FAVC],
+        'FCVC': [data.FCVC],
+        'NCP': [data.NCP],
+        'CAEC': [data.CAEC],
+        'SMOKE': [data.SMOKE],
+        'CH2O': [data.CH2O],
+        'SCC': [data.SCC],
+        'FAF': [data.FAF],
+        'TUE': [data.TUE],
+        'CALC': [data.CALC],
+        'MTRANS': [data.MTRANS],
+    }
+    # Convert ke DataFrame
+    input_df = pd.DataFrame(input_dict)
+    # Prediksi
+    prediction = pipeline.predict(input_df)
     pred_label = label_encoder.inverse_transform(prediction)[0]
     return {"prediction": pred_label}
-
