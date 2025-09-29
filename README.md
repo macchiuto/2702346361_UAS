@@ -45,7 +45,8 @@ Live demo of the app: [Obesity Prediction App](https://2702346361uas.streamlit.a
 ## Key Insights
 - Predictive modeling identifies key lifestyle and health factors influencing obesity risk.
 - Pipeline accurately predicts obesity levels across 7 classes: `Insufficient_Weight`, `Normal_Weight`, `Overweight_Level_I`, `Overweight_Level_II`, `Obesity_Type_I`, `Obesity_Type_II`, `Obesity_Type_III`
-- The deployed app demonstrates **end-to-end ML workflow**: preprocessing → model training → deployment.- Supports awareness on SDG 3: Good Health and Well-being through data-driven insights.
+- The deployed app demonstrates **end-to-end ML workflow**: preprocessing → model training → deployment.
+- Supports awareness on SDG 3: Good Health and Well-being through data-driven insights.
 
 ---
 
