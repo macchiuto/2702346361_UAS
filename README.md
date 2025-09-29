@@ -11,7 +11,8 @@ The project is developed as a **final project for the Model Deployment course**,
 
 The app allows users to explore predictions interactively via a **Streamlit frontend**, powered by a **FastAPI backend** and an **XGBoost pipeline** for classification.
 
-Live demo of the app: [Obesity Prediction App](https://2702346361uas.streamlit.app/)
+Live demo of the app: 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://2702346361uas.streamlit.app/)
 
 ---
 
