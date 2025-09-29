@@ -56,3 +56,8 @@ Live demo of the app:
 
 ## References
 - Python libraries: pandas, scikit-learn, XGBoost, FastAPI, Streamlit
+
+---
+
+## Author
+Syalista Galuh Nadira
