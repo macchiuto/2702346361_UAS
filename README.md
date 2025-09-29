@@ -23,6 +23,9 @@ Live demo of the app: [Obesity Prediction App](https://2702346361uas.streamlit.a
 - `frontend_streamlit.py` → Streamlit app for user interaction
 - `requirements.txt` → dependencies for deployment
 - `README.md` → this documentation
+- **results/**
+  - `Screenshot.png` → screenshot demonstrating app functionality  
+  - **Project Explanation Video** → [View on OneDrive](https://binusianorg-my.sharepoint.com/personal/syalista_nadira_binus_ac_id/_layouts/15/guestaccess.aspx?share=ESnR3_ESYwdBuOSiHPoAnfQB3WXK4tM9T6ctKLHiKMfd-Q&e=jF1cjC)
 
 ---
 
